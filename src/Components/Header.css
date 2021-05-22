@@ -1,4 +1,158 @@
+*{
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+
+/* Appbar Section */
 .MuiAppBar-colorPrimary {
     color: #fff;
     background:linear-gradient(90deg, rgba(75,6,193,1) 0%, rgba(206,2,189,1) 100%)!important;
+}
+/* Sidebar Section */
+.MuiDrawer-paper{
+    color:white!important;
+    background: linear-gradient(90deg, rgba(75,6,193,1) 0%, rgba(206,2,189,1) 100%)!important;
+}
+
+/* Home Section */
+
+.bghome{
+    background: radial-gradient(circle, rgba(206,2,189,1) 0%, rgba(75,6,193,1) 90%)!important;
+}
+
+
+.MuiDrawer-paper img{
+    width: 125px;
+    display: block;
+    margin: auto;
+    top:50px;
+}
+.cortex{
+    font-size: 100px;
+    font-weight: 500;
+    transition: 0.2s;
+    color:white;
+}
+
+.copywriter{
+    margin-top: -90px;
+    font-size: 62px;
+    font-weight: 100;
+    transition: 0.2s;
+    color:white;
+}
+.cortexwriting{
+    font-size: 30px;
+    font-weight: 500;
+    color:white; 
+    padding: 50px 0;
+}
+
+.featured-image{
+    position:relative;
+    margin-top: -520px!important;
+}
+.header-brain{
+    position:relative;
+    margin-top: -580px!important;
+}
+
+.MuiButton-contained{
+    color:white!important;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px!important;
+    padding: 10px;
+    background: linear-gradient(to bottom, #23ffdb, #1b5dbf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow:  10px 15px rgb(0 0 0 / 30%)
+}
+
+/* Services Section CSS */
+.image-adjust{
+    margin-top: 50px;
+}
+.ux-heading{
+    font-size:50px;
+    color:white;
+    margin-top: 50px!important;
+    font-weight: 400;
+}
+.ux-paragraph{
+    color:white;
+    font-size: 16px;
+    line-height: 21px;
+    overflow: hidden;
+}
+.ux-listtag{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.ux-listtag li{
+    display: inline-block;
+    padding-right: 60px;
+    line-height: 30px;
+    color:white;
+
+}
+/* About Section */
+.about-heading{
+    margin-top: 100px!important;
+    margin-bottom: 50px;
+}
+
+.about-heading strong{
+    font-size:28px;
+    color:white;
+    font-weight: 100;
+    box-shadow: 1px 16px 20px rgb(0 0 0 / 17%);
+    padding: 8px 40px!important;
+}
+.about-paragraph{
+    color:white;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.about-image{
+    display: block;
+    margin: auto;
+
+}
+
+.about-image-title{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.about-image-title strong{
+    color:white;
+    font-weight: 400;
+}
+.about-image-title em{
+    font-weight: 100;
+    color: #a9a9a9!important;
+}
+
+/* Samples Section */
+.samples-heading{
+    margin-top: 100px!important;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size:28px;
+    color:white;
+}
+
+.samples-heading strong{
+    font-weight: 100;
+    box-shadow: 1px 16px 20px rgb(0 0 0 / 17%);
+    padding: 8px 40px!important;
 }

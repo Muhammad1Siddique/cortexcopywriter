@@ -3,35 +3,34 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import './Header.css';
+import { Sidebar } from './Sidebar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    boxShadow: '1px 16px 20px rgb(0 0 0 / 17%)!important',
   },
   menuButton: {
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(3),
   },
   title: {
     flexGrow: 1,
     textAlign: 'center',
   },
+  
 }));
 
 export const Navbar = () =>{
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div className={classes.root}>  
+      <AppBar  position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Switch Experience
           </Typography>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          <Sidebar />
         </Toolbar>
       </AppBar>
     </div>
