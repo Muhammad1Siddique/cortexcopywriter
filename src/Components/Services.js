@@ -2,24 +2,54 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
+import useWebAnimations from "@wellyshen/use-web-animations";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: 'linear-gradient(to right, #9803be, #660798)',
+    paddingBottom: '50px',
   },
 }));
 
+
+
 export const Services = ()=> {
   const classes = useStyles();
+
+  const sceneryFrames =   [
+    { transform: 'translateY(0)' },
+    { transform: 'translateY(-10px)' },
+    { transform: 'translateY(0)' },
+  ];
+
+const sceneryTiming = {
+  duration: 2000,
+  iterations: Infinity,
+  easing: "ease-in-out",
+};
+
+const animations1 = useWebAnimations({
+  keyframes: sceneryFrames,
+  animationOptions: sceneryTiming,
+});
+const animations2 = useWebAnimations({
+    keyframes: sceneryFrames,
+    animationOptions: sceneryTiming,
+  });
+  const animations3 = useWebAnimations({
+    keyframes: sceneryFrames,
+    animationOptions: sceneryTiming,
+  });
+
 
   return (
     <div className={classes.root}>
         <Container fixed>
         <Grid container spacing={3}>
         <Grid item xs={6}>
-            <div className="image-adjust">
-                <img src={"https://www.cortexcopywriter.com/img/services/services-5.svg"} alt="Front Layer" className="header-front"/>
+            <div ref={animations1.ref} className="image-adjust">
+                <img src={"https://www.cortexcopywriter.com/img/services/services-5.svg"} alt="Front Layer"/>
             </div>   
         </Grid>
         <Grid item xs={6}>
@@ -61,8 +91,8 @@ export const Services = ()=> {
             </Grid> 
 
             <Grid item xs={6}>
-                <div className="image-adjust">
-                    <img src={"https://www.cortexcopywriter.com/img/services/services-6.svg"} alt="Front Layer" className="header-front"/>
+                <div ref={animations2.ref} className="image-adjust">
+                    <img src={"https://www.cortexcopywriter.com/img/services/services-6.svg"} alt="Front Layer"/>
                 </div>   
             </Grid>
             
@@ -70,8 +100,8 @@ export const Services = ()=> {
 
         <Grid container spacing={3}>
         <Grid item xs={6}>
-            <div className="image-adjust">
-                <img src={"https://www.cortexcopywriter.com/img/services/services-7.svg"} alt="Front Layer" className="header-front"/>
+            <div ref={animations3.ref} className="image-adjust">
+                <img src={"https://www.cortexcopywriter.com/img/services/services-7.svg"} alt="Front Layer" />
             </div>   
             </Grid>
             <Grid item xs={6}>
