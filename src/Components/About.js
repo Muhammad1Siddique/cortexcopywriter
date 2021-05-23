@@ -17,7 +17,7 @@ export const About = ()=> {
 
   const sceneryFrames =   [
     { transform: 'scale(1)' },
-    { transform: 'scale(1.1)' },
+    { transform: 'scale(1.05)' },
     { transform: 'scale(1)' },
   ];
 
